@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Head from "next/head"
+import Layout from '../../components/layout'
 
 const ProfilePicture = () => (
     <Image
@@ -13,7 +14,7 @@ const ProfilePicture = () => (
 
 export default function FirstPost(){
     return (
-        <>
+        <Layout>
             <Head>
                 <title>First Post</title>
             </Head>
@@ -24,6 +25,6 @@ export default function FirstPost(){
                 </Link>
             </h2>
             <ProfilePicture />
-        </>
+        </Layout>
     )
 }
