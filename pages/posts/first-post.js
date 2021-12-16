@@ -1,4 +1,14 @@
 import Link from 'next/link'
+import Image from 'next/image'
+
+const ProfilePicture = () => (
+    <Image
+        src="/images/profile.jpg"//Art by Xie Boli https://www.artstation.com/xieboli
+        alt="Paul Atreides"
+        height={350}
+        width={450}
+    />
+)
 
 export default function FirstPost(){
     return (
@@ -9,6 +19,7 @@ export default function FirstPost(){
                     <a>Back to home</a>
                 </Link>
             </h2>
+            <ProfilePicture />
         </>
     )
 }
