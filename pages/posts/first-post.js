@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import Head from "next/head"
 
 const ProfilePicture = () => (
     <Image
@@ -13,6 +14,9 @@ const ProfilePicture = () => (
 export default function FirstPost(){
     return (
         <>
+            <Head>
+                <title>First Post</title>
+            </Head>
             <h1>First post</h1>
             <h2>
                 <Link href="/">
